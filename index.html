@@ -28,17 +28,18 @@
   var p = function(properties, children) {
     return Reyakt.makeTag('p', properties, children);
   }
+
+  // our first proper component
+  var App = function() {
+    return div(
+      { id: 'App', className: 'App' },
+      'children components go here!'
+    );
+  }
   
   Reyakt.render(
     'reyakt-app',
-    Reyakt.makeTag(
-      'span',
-      { edinburgh: 'test', id: 'hello', className: 'introduction' },
-      [
-        h1({ className: 'title' }, 'Hello World!'),
-        p({}, 'This is a paragraph which has been nested in the parent Span alongside the h1 tag!'),
-      ]
-    ),
+    App()
   );
 </script>
 </html>
