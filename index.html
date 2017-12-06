@@ -34,7 +34,10 @@
     Reyakt.makeTag(
       'span',
       { edinburgh: 'test', id: 'hello', className: 'introduction' },
-      h1({ className: 'title' }, 'Hello World!')
+      [
+        h1({ className: 'title' }, 'Hello World!'),
+        p({}, 'This is a paragraph which has been nested in the parent Span alongside the h1 tag!'),
+      ]
     ),
   );
 </script>

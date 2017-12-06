@@ -23,6 +23,10 @@ var Reyakt = {
       element.innerHTML = children
     } else if (children instanceof window.Element) {
       element.appendChild(children);
+    } else if (Array.isArray(children)) {
+      children.forEach(function(child) {
+        element.appendChild(child);
+      });
     }
     
     return element;
