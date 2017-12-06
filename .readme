@@ -33,3 +33,10 @@
 ### STEP 7
 12. Create a proper 'Component' and start nesting them
 13. Play around with changing text to other nested components (change link text to h1)
+
+### Issues
+Too many to count
+Because I'm setting innerHTML, writing a tag will create that element.
+Syntax still not as nice as JSX
+Haven't done anything about event binding
+Haven't done anything about virtual DOM
