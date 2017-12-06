@@ -29,11 +29,48 @@
     return Reyakt.makeTag('p', properties, children);
   }
 
+  var h3 = function(properties, children) {
+    return Reyakt.makeTag('h3', properties, children);
+  }
+
+  var a = function(properties, children) {
+    return Reyakt.makeTag('a', properties, children);
+  }
+
+  // Header Component 
+  var Header = function() {
+    return div(
+      { id: 'Header', className: 'Header' },
+      [
+        h1({}, 'Hello World!'),
+        p({}, 'This is my first Reyakt Application'),
+      ]
+    )
+  }
+
+  // Call to action Component 
+  var CallToAction = function() {
+    return div(
+      { id: 'callToAction', className: 'callToAction' },
+      [
+        h3({}, 'Facebook should hire me as a react dev ¯\\_(ツ)_/¯'),
+        a({
+          href: 'https://www.facebook.com/careers/jobs/a0I1H00000LBgrYUAT/?q=react&location=menlo-park',
+          target: '_blank',
+          rel: 'nofollow',
+        }, 'Click here to apply')
+      ]
+    )
+  }
+
   // our first proper component
   var App = function() {
     return div(
       { id: 'App', className: 'App' },
-      'children components go here!'
+      [
+        Header(),
+        CallToAction(),
+      ]
     );
   }
   

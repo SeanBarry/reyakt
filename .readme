@@ -32,3 +32,4 @@
 
 ### STEP 7
 12. Create a proper 'Component' and start nesting them
+13. Play around with changing text to other nested components (change link text to h1)
