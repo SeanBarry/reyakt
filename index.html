@@ -15,7 +15,11 @@
 <script>
   Reyakt.render(
     'reyakt-app',
-    Reyakt.makeTag('span', 'Hello World!'),
+    Reyakt.makeTag(
+      'span',
+      { edinburgh: 'test', id: 'hello', className: 'introduction' },
+      'Hello World!'
+    ),
   );
 </script>
 </html>
