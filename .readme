@@ -10,3 +10,9 @@
 4. Create makeTag(tag, content) function
     createElement -> innerHTML
 5. Insert makeTag into our render method
+
+
+### STEP 3
+
+6. Insert properties to makeTag(tag, properties, content)
+7. If property does not exist, warn with an error
