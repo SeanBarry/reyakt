@@ -28,3 +28,7 @@
 
 ### STEP 6
 11. Allow an array of tabs to be nested as opposed to a single tag
+    Array.isArray(children)
+
+### STEP 7
+12. Create a proper 'Component' and start nesting them
