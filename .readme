@@ -4,3 +4,9 @@
 2. Create Render function
 3. Create Render destination and render an element
     render -> document.getElementById -> appendChild
+
+### STEP 2
+
+4. Create makeTag(tag, content) function
+    createElement -> innerHTML
+5. Insert makeTag into our render method
