@@ -25,3 +25,6 @@
 
 ### STEP 5
 10. Allow other tags to be nested as opposed to just text
+
+### STEP 6
+11. Allow an array of tabs to be nested as opposed to a single tag
