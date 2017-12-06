@@ -28,16 +28,13 @@
   var p = function(properties, children) {
     return Reyakt.makeTag('p', properties, children);
   }
-
+  
   Reyakt.render(
     'reyakt-app',
     Reyakt.makeTag(
       'span',
       { edinburgh: 'test', id: 'hello', className: 'introduction' },
-      h1(
-        { className: "title" },
-        'Hello World!',
-      ),
+      'Hello World!'
     ),
   );
 </script>
