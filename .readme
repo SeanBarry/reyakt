@@ -1,0 +1,6 @@
+### STEP 1
+
+1. Create React Library
+2. Create Render function
+3. Create Render destination and render an element
+    render -> document.getElementById -> appendChild
