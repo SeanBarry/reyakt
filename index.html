@@ -5,14 +5,17 @@
   <title>Reyakt</title>
 </head>
 <body>
-  <div id="react-app"></div>
+  <div id="reyakt-app"></div>
 </body>
 
 <!-- Import React -->
-<script src="react.js"></script>
+<script src="reyakt.js"></script>
 
 <!-- Our Application Code -->
 <script>
-  
+  Reyakt.render(
+    'reyakt-app',
+    document.createElement('h1'),
+  );
 </script>
 </html>
