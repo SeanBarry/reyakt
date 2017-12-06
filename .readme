@@ -19,6 +19,6 @@
 
 
 ### STEP 4
-8) Create shorthand functions for different elements
+8. Create shorthand functions for different elements
     p = (properties, children) => makeTag('p', properties, children)
-9) Change 'content' to 'children' in React (because we want to start nesting elements)
+9. Change 'content' to 'children' in React (because we want to start nesting elements)
