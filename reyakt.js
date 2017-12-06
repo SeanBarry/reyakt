@@ -3,7 +3,7 @@ var Reyakt = {
     document.getElementById(destination).appendChild(component);
   },
 
-  makeTag(tag, properties, content) {
+  makeTag(tag, properties, children) {
     var element = document.createElement(tag);
 
     Object.keys(properties).forEach(function(property) {
@@ -14,7 +14,7 @@ var Reyakt = {
       }  
     });
 
-    if (content) element.innerHTML = content;
+    if (children) element.innerHTML = children;
 
     return element;
   }
