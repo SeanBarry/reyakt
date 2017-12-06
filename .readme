@@ -16,3 +16,9 @@
 
 6. Insert properties to makeTag(tag, properties, content)
 7. If property does not exist, warn with an error
+
+
+### STEP 4
+8) Create shorthand functions for different elements
+    p = (properties, children) => makeTag('p', properties, children)
+9) Change 'content' to 'children' in React (because we want to start nesting elements)
