@@ -8,14 +8,23 @@ var Reyakt = {
 
     Object.keys(properties).forEach(function(property) {
       if (property in element) {
-        element.setAttribute(property, properties[property]);
+        if (property === 'className') {
+          element.setAttribute('class', properties[property]);
+        } else {
+         element.setAttribute(property, properties[property]);
+       }
       } else {
         console.error(`[ERROR] - ${property} is not valid!`);
       }  
     });
 
-    if (children) element.innerHTML = children;
 
+    if (typeof children === 'string') {
+      element.innerHTML = children
+    } else if (children instanceof window.Element) {
+      element.appendChild(children);
+    }
+    
     return element;
   }
 }
