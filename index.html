@@ -14,27 +14,30 @@
 <!-- Our Application Code -->
 <script>
   var div = function(properties, children) {
-    return React.makeTag('div', properties, children);
+    return Reyakt.makeTag('div', properties, children);
   }
 
   var span = function(properties, children) {
-    return React.makeTag('span', properties, children);
+    return Reyakt.makeTag('span', properties, children);
   }
 
   var h1 = function(properties, children) {
-    return React.makeTag('h1', properties, children);
+    return Reyakt.makeTag('h1', properties, children);
   }
 
   var p = function(properties, children) {
-    return React.makeTag('p', properties, children);
+    return Reyakt.makeTag('p', properties, children);
   }
-  
+
   Reyakt.render(
     'reyakt-app',
     Reyakt.makeTag(
       'span',
       { edinburgh: 'test', id: 'hello', className: 'introduction' },
-      'Hello World!'
+      h1(
+        { className: "title" },
+        'Hello World!',
+      ),
     ),
   );
 </script>
