@@ -11,4 +11,4 @@ The excercise was about learning how the tools we use on a daily basis work when
 Each branch adds progressively more functionality until the application finally starts to resemble an extremely basic version of React (but obviously nowhere near as good as the real thing!)
 
 
-<img alt="Sean giving react talk" src="react-talk.jpeg" width="400">
+<img alt="Sean giving react talk" src="react-talk.jpeg">
